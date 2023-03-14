@@ -18,7 +18,7 @@ body,p,h1,h2,h3,ul,ol {
 }
 .container {
     background: #eee;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -40,6 +40,26 @@ body,p,h1,h2,h3,ul,ol {
 }
 .col-3 {
     width: calc(25% - var(--gutter));
+}
+.nav {
+    margin: auto;
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+}
+.nav a {
+    padding: 5px;
+    color: rgb(10, 24, 146);
+    margin-right: 70px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background: rgb(39, 7, 219);
+    color: rgb(255, 255, 255);
+  }
+.nav a:last-child {
+    margin-right: 0px;
 }
 @media screen and (max-width:992px) {
     .container {
