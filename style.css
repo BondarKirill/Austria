@@ -7,17 +7,17 @@
 }
 html {
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 25px;
 }
 body,p,h1,h2,h3,ul,ol {
     margin: 0;
-    /* background-color: #fff; */
+    background-color: rgb(24, 238, 4);
 }
 .header {
     background-color: var(--bg);
 }
 .container {
-    background: rgb(255, 255, 255);
+    background: yellow;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -29,38 +29,41 @@ body,p,h1,h2,h3,ul,ol {
 .row > div {
     padding: 15px;
     margin: 0 auto;
-    background-color: wheat;
-    border: 1px solid gray;
+    /* background-color: red; */
 }
-.col-1 {
+.column {
     width: calc(100% - var(--gutter));
     margin: 5px;
 }
-.col-2 {
+/* .col-2 {
     width: calc(50% - var(--gutter));
 }
 .col-3 {
     width: calc(25% - var(--gutter));
+} */
+.navigation {
+    background-color: rgb(165, 221, 247);
 }
-.nav {
-    margin: auto;
-    /* max-width: 1200px; */
-    display: flex;
-    justify-content: center;
-}
-.nav a {
+.navigation a {
+    float: left;
+    color: white;
+    text-align: center;
     padding: 5px;
-    color: rgb(10, 24, 146);
-    margin-right: 70px;
-    font-size: 20px;
     text-decoration: none;
 }
-.nav a:hover {
-    background: rgb(34, 139, 224);
-    color: rgb(255, 255, 255);
-  }
-.nav a:last-child {
-    margin-right: 0px;
+.navigation a:hover {
+    background-color: aqua;
+}
+.navigation a.active {
+    background-color: rgb(86, 86, 248);
+    color: white;
+    border: 1px solid blue;
+}
+.navigation-right {
+    float: right;
+}
+.navigation-right a:hover {
+    background-color: red;
 }
 @media screen and (max-width:992px) {
     .container {
