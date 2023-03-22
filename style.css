@@ -8,12 +8,14 @@
 html {
     box-sizing: border-box;
     font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body,p,h1,h2,h3,ul,ol {
     margin: 0;
     background-color: rgb(24, 238, 4);
 }
 .header {
+    /* background-image: url(5_0000_Background.png); */
     background-color: var(--bg);
 }
 .container {
@@ -27,9 +29,8 @@ body,p,h1,h2,h3,ul,ol {
     flex-wrap: wrap;
 }
 .row > div {
-    padding: 15px;
+    /* padding: 15px; */
     margin: 0 auto;
-    /* background-color: red; */
 }
 .column {
     width: calc(100% - var(--gutter));
@@ -43,20 +44,21 @@ body,p,h1,h2,h3,ul,ol {
 } */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #ddd;
   }
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(1, 1, 99);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
   }
   .active {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
+    border: 3px solid rgb(0, 8, 77);
   }
   .topnav .icon {
     display: none;
@@ -69,7 +71,8 @@ body,p,h1,h2,h3,ul,ol {
       font-size: 17px;    
       border: none;
       outline: none;
-      color: white;
+      font-size: 22px;
+      color: rgb(1, 1, 99);
       padding: 14px 16px;
       background-color: inherit;
       font-family: inherit;
@@ -92,8 +95,10 @@ body,p,h1,h2,h3,ul,ol {
       text-align: left;
   }
   .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
+    background-color: blue;
     color: white;
+    /* padding-bottom: 5px; */
+    margin: 5px;
   }
   .dropdown-content a:hover {
       background-color: #ddd;
